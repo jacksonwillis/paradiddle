@@ -1,6 +1,8 @@
 Paradiddle
 ==========
 
+[![Build Status](https://secure.travis-ci.org/jacksonwillis/paradiddle.png?branch=master)](https://secure.travis-ci.org/jacksonwillis/paradiddle)
+
 License
 -------
 
