@@ -2,12 +2,7 @@
 # -*- coding: UTF-8 -*-
 # This file is part of paradiddle <http://github.com/jacksonwillis/paradiddle/>.
 
-class Paradiddle
-  def initialize(options = {})
-    @options = options
-  end
+$LOAD_PATH << File.expand_path("../../lib", __FILE__)
+require "paradiddle"
 
-  def self.go!(args = ARGV)
-
-  end
-end
+Paradiddle.go!
