@@ -13,7 +13,7 @@ end
 
 require "jeweler"
 Jeweler::Tasks.new do |gem|
-  gem.name = "paradiddle2"
+  gem.name = "paradiddle"
   gem.homepage = "http://github.com/jacksonwillis/paradiddle"
   gem.license = "Tiny"
   gem.summary = %Q{TODO: one-line summary of your gem}
