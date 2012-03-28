@@ -19,6 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{TODO: one-line summary of your gem}
   gem.description = %Q{TODO: longer description of your gem}
   gem.authors = ["Jackson Willis"]
+  gem.executables = "paradiddle"
+  gem.required_ruby_version = ">= 1.9.2"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
