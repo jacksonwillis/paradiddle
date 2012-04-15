@@ -1,5 +1,6 @@
-Array::sum = () -> @.reduce (x, y) -> x + y
-Array::sample = (n = 1) -> (@.sort (a,b) -> Math.round Math.random())[0..n-1]
+Array::sum = () -> @.reduce (a, e) -> a + e
+Array::shuffle = () -> (@.sort () -> Math.round Math.random())
+Array::sample = (n = 1) -> @.shuffle()[0..n-1]
 String::htmlEscape = () -> @.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 
 class NoteLength

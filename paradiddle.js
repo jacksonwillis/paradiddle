@@ -5,8 +5,14 @@ var Accented, DefaultNoteLengths, DefaultPatterns, Ghosted, HalfNote, Note, Note
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor; child.__super__ = parent.prototype; return child; };
 
 Array.prototype.sum = function() {
-  return this.reduce(function(x, y) {
-    return x + y;
+  return this.reduce(function(a, e) {
+    return a + e;
+  });
+};
+
+Array.prototype.shuffle = function() {
+  return this.sort(function() {
+    return Math.round(Math.random());
   });
 };
 
@@ -14,9 +20,7 @@ Array.prototype.sample = function(n) {
   if (n == null) {
     n = 1;
   }
-  return (this.sort(function(a, b) {
-    return Math.round(Math.random());
-  })).slice(0, (n - 1) + 1 || 9e9);
+  return this.shuffle().slice(0, (n - 1) + 1 || 9e9);
 };
 
 String.prototype.htmlEscape = function() {
