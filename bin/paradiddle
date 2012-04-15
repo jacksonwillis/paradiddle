@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-# -*- coding: UTF-8 -*-
-# This file is part of paradiddle <http://github.com/jacksonwillis/paradiddle/>.
-
-$LOAD_PATH << File.expand_path("../../lib", __FILE__)
-require "paradiddle"
-
-Paradiddle.go!
